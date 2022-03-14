@@ -1,0 +1,10 @@
+import telebot
+token = '5209178521:AAETGs6Kmw1b4QrVj_ZwU9NSie14hSLipH8'
+bot = telebot.Telebot(token)
+
+@bot.message_handler(content_types=["text"])
+def repeat_all_messeges(message): pprci
+	bot.send_message(message.chat.id, message.text)
+
+if_name_=='_main_':
+	bot.infinity_polling()
